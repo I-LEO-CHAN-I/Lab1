@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 var text = s.toString();
-                if (text.length > 1) {
+                try {
                     if (text[0] == 'k') {
                         text = text.drop(1);
                         enterK(text.toFloat());
@@ -49,9 +49,10 @@ class MainActivity : AppCompatActivity() {
                     } else {
                         printErr();
                     }
-                } else {
+                } catch (e : Exception) {
                     printErr();
                 }
+
             }
         })
     }
