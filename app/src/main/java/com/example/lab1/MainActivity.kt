@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
 
         textBox1.text = "Катет: " + k.toString();
         textBox2.text = "Гипотинуза: " + sqrt(2 * k * k).toString();
-        textBox3.text = "Площадь" + (k * k * 0.5).toString();
+        textBox3.text = "Площадь: " + (k * k * 0.5).toString();
     }
 
     fun enterG(g: Float) {
@@ -85,7 +85,7 @@ class MainActivity : AppCompatActivity() {
         val k = sqrt(g*g*0.5);
         textBox1.text = "Катет: " + k.toString();
         textBox2.text = "Гипотинуза: " + g.toString();
-        textBox3.text = "Площадь" + (k * k * 0.5).toString();
+        textBox3.text = "Площадь: " + (k * k * 0.5).toString();
     }
 
     fun enterS(S: Float) {
@@ -96,6 +96,6 @@ class MainActivity : AppCompatActivity() {
         val k = sqrt(2*S);
         textBox1.text = "Катет: " + k.toString();
         textBox2.text = "Гипотинуза: " + sqrt(2 * k * k).toString();
-        textBox3.text = "Площадь" + S.toString();
+        textBox3.text = "Площадь: " + S.toString();
     }
 }
